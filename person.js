@@ -30,12 +30,12 @@ class Person{
     }
 }
 
-let pepe = new Person("Pepe", "Gonzalez", 1993, 65, 1.75, ['Correr', 'Dormir', 'Nadar'])
-// console.log(pepe);
+// let pepe = new Person("Pepe", "Gonzalez", 1993, 65, 1.75, ['Correr', 'Dormir', 'Nadar'])
+// // console.log(pepe);
 
-// pepe.printAll()
+// // pepe.printAll()
 
-// console.log(pepe.printHobbies());
+// // console.log(pepe.printHobbies());
 
 module.exports = {Person}
 
