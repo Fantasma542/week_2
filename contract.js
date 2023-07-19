@@ -1,15 +1,5 @@
-class Person{
-    constructor(name, surname, yearOfBirth, weight, height, hobbies){
-        this.nombre = name
-        this.apellidos = surname
-        this.anyoNacimiento = yearOfBirth
-        // this.edad = this.calcEdad(2023)
-        this.peso = weight
-        this.altura = height
-        // this.imc = this.calcImc()
-        this.aficiones = hobbies
-    }
-}
+let myLib2 = require("./person")
+
 class Contacts{
         constructor(){
             this.persona = [];
@@ -29,4 +19,4 @@ Aficiones: ${objeto.aficiones}`);
 }
 
 
-module.exports = {Contacts, Person}
+module.exports = {Contacts, myLib2}
