@@ -1,11 +1,11 @@
 import { Person } from "./person";
 
-let pepe = new Person('Juan', 20, 'Primo de Rivera')
+let pepe = new Person('Juan', 20, 'Gran Vía')
 console.log(pepe.printName());
 
 console.log(pepe.yearOfBirth(2023));
 
-pepe.setAddress('Los Angeles')
+pepe.setAddress('Puerta del Sol')
 console.log(pepe);
 
 console.log(pepe.getAddress());
