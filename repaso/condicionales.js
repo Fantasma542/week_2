@@ -65,22 +65,26 @@ var piscis = zodiac(25, 2);
 console.log(piscis);
 function continent(country) {
     if (country === 'España' || country === 'Francia' || country === 'Rumania' || country === 'Italia' || country === 'Belgica') {
-        console.log('Europa');
+        console.log('Eres de Europa');
     }
     else if (country === 'Pakistan' || country === 'China' || country === 'Japon' || country === 'Korea del Sur' || country === 'India') {
-        console.log('Asia');
+        console.log('Eres de Asia');
     }
     else if (country === 'Egipto' || country === "Marruecos" || country === 'Nigeria' || country === 'Kenia' || country === 'Republica del Congo') {
-        console.log('Africa');
+        console.log('Eres de Africa');
     }
     else if (country === 'Estados Unidos' || country === 'Argentina' || country === 'Mexico' || country === 'Chile' || country === 'Brasil') {
-        console.log('America');
+        console.log('Eres de America');
+    }
+    else if (country === 'Nueva Zelanda' || country === 'Papua Nueva Guinea' || country === 'Ausralia') {
+        console.log('Eres de Oceanía');
     }
 }
 continent('España');
 continent('China');
 continent('Marruecos');
 continent('Estados Unidos');
+continent('Nueva Zelanda');
 function isEven(number) {
     if (number % 2 == 0) {
         console.log('El numero es par');
