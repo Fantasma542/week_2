@@ -1,12 +1,12 @@
 function evenNumbers(num: number): void {
-    for (let i = 0; i <= num; i ++) {
-        if (num % 2 == 0) {
+    for (let i = 1; i <= num; i ++) {
+        if (i % 2 !== 0) {
             console.log(i);
         }
     }
   }
 
-evenNumbers(10)
+evenNumbers(20)
 
 
 function myRevert(myArr:string[]):void {
@@ -44,5 +44,5 @@ export function add(myWords: string[]) {
     return suma;
   }
 
-  let palabras = add(["Hola", "Soy"])
+  let palabras = add(["Maria", "Ana"])
 console.log(palabras);

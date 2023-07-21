@@ -2,13 +2,13 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.add = void 0;
 function evenNumbers(num) {
-    for (var i = 0; i <= num; i++) {
-        if (num % 2 == 0) {
+    for (var i = 1; i <= num; i++) {
+        if (i % 2 !== 0) {
             console.log(i);
         }
     }
 }
-evenNumbers(10);
+evenNumbers(20);
 function myRevert(myArr) {
     for (var i = myArr.length - 1; i >= 0; i--) {
         console.log(myArr[i]);
@@ -37,5 +37,5 @@ function add(myWords) {
     return suma;
 }
 exports.add = add;
-var palabras = add(["Hola", "Soy"]);
+var palabras = add(["Maria", "Ana"]);
 console.log(palabras);
