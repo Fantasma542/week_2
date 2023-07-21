@@ -16,29 +16,14 @@ export class Vector{
         console.log(this.elements);
         
     }
-    public add(v1: Vector): Vector {
-        let elements: number[] = [];
-        let elements1 = this.elements.length;
-        let elements2 = v1.elements.length;
-        let minelements = elements1 < elements2 ? elements1 : elements2;
-        for (let i = 0; i < minelements; i++) {
-          let sum = this.elements[i] + v1.elements[i];
-          elements.push(sum);
-        }
-    
-        if (elements1 > elements2) {
-          for (let i = minelements; i < elements1; i++) {
-            elements.push(this.elements[i]);
+    public add1(v1:Vector):Vector{
+      let vectorPrincipal:Vector = new Vector(0, 0);
+      if (v1.elements.length == this.elements.length){
+          for(let i = 0; i < this.elements.length; i++){
+              vectorPrincipal.elements.push(this.elements[i] + v1.elements[i]) 
           }
-        } else {
-          for (let i = minelements; i < elements2; i++) {
-            elements.push(v1.elements[i]);
-          }
-        }
-    
-        let resultadoSum = new Vector(0, 0);
-        resultadoSum.elements = elements;
-        return resultadoSum;
+      }
+      return vectorPrincipal
       }
       public subs(v1: Vector): Vector {
         let elements: number[] = [];
