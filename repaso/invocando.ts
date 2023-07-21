@@ -1,7 +1,7 @@
 import { isEven } from "./condicionales";
 import { add } from "./buclesFor";
 
-const arrays = [
+let arrays = [
     ["Casa", "Coche", "Ciudad", "Cesta"],
     ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"],
     ["Venezuela", "Veneno", "Voltaje"]
@@ -9,7 +9,7 @@ const arrays = [
 
 for (let i = 0; i < arrays.length; i++) {
     let array = arrays[i];
-    let sumCharacters = add(array);
-    isEven(sumCharacters);
-  console.log(`Suma de caracteres: ${sumCharacters}`);
+    let suma = add(array);
+    isEven(suma);
+  console.log(`Su suma es: ${suma}`);
 }

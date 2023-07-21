@@ -9,7 +9,7 @@ var arrays = [
 ];
 for (var i = 0; i < arrays.length; i++) {
     var array = arrays[i];
-    var sumCharacters = (0, buclesFor_1.add)(array);
-    (0, condicionales_1.isEven)(sumCharacters);
-    console.log("Suma de caracteres: ".concat(sumCharacters));
+    var suma = (0, buclesFor_1.add)(array);
+    (0, condicionales_1.isEven)(suma);
+    console.log("Su suma es: ".concat(suma));
 }
