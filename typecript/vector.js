@@ -17,28 +17,14 @@ var Vector = /** @class */ (function () {
     Vector.prototype.print = function () {
         console.log(this.elements);
     };
-    Vector.prototype.add = function (v1) {
-        var elements = [];
-        var elements1 = this.elements.length;
-        var elements2 = v1.elements.length;
-        var minelements = elements1 < elements2 ? elements1 : elements2;
-        for (var i = 0; i < minelements; i++) {
-            var sum = this.elements[i] + v1.elements[i];
-            elements.push(sum);
-        }
-        if (elements1 > elements2) {
-            for (var i = minelements; i < elements1; i++) {
-                elements.push(this.elements[i]);
+    Vector.prototype.add1 = function (v1) {
+        var vectorPrincipal = new Vector(0, 0);
+        if (v1.elements.length == this.elements.length) {
+            for (var i = 0; i < this.elements.length; i++) {
+                vectorPrincipal.elements.push(this.elements[i] + v1.elements[i]);
             }
         }
-        else {
-            for (var i = minelements; i < elements2; i++) {
-                elements.push(v1.elements[i]);
-            }
-        }
-        var resultadoSum = new Vector(0, 0);
-        resultadoSum.elements = elements;
-        return resultadoSum;
+        return vectorPrincipal;
     };
     Vector.prototype.subs = function (v1) {
         var elements = [];
