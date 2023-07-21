@@ -75,7 +75,7 @@ continent('China')
 continent('Marruecos')
 continent('Estados Unidos')
 
-function isEven(number){
+export function isEven(number){
     if (number % 2 == 0) {
         console.log('El numero es par');
     } else {
