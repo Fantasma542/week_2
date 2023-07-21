@@ -3,13 +3,12 @@ function hasEven(myNums:number[]) {
     while (i< myNums.length) {
         if (myNums[i] % 2 === 0) {
             return true
-        } else {
-            return false
-        }
+        } 
         i++;
     }
+    return false
 }
-let numeros = hasEven([3, 1, 7, 5, 9])
+let numeros = hasEven([3, 1, 7, 5, 9, 15, 21, 25, 35, 45, 75, 80])
 console.log(numeros);
 
 function startWhithM(myNames:string[]) {
