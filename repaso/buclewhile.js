@@ -20,5 +20,5 @@ function startWhithM(myNames) {
     }
     return true;
 }
-var names = startWhithM(['Maria', 'Mol', 'Manuel']);
+var names = startWhithM(['Maria', 'Marta', 'Manuel']);
 console.log(names);
