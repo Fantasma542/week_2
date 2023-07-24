@@ -20,10 +20,8 @@ console.log('New Color:', myMobile.getColor());
 console.log('New Price:', myMobile.getPrice());
 myMobile.impMob();
 var myMobile2 = new mobile_1.Mobile("S21", "Galaxy", "Samsung", "Rojo", 384);
-var myMobile3 = new mobile_1.Mobile("S21", "Galaxy", "Samsung", "Rojo", 384);
+var myMobile3 = new mobile_1.Mobile("A54", "Galaxy", "Samsung", "Negro", 415);
 var myMobiles = [myMobile, myMobile2, myMobile3];
-for (var _i = 0, myMobiles_1 = myMobiles; _i < myMobiles_1.length; _i++) {
-    var mobile = myMobiles_1[_i];
-    console.log("\nMobile ".concat(myMobiles.indexOf(mobile) + 1, ":"));
-    mobile.impMob();
-}
+myMobiles[0].impMob();
+myMobiles[1].impMob();
+myMobiles[2].impMob();

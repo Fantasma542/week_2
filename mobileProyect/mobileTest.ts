@@ -25,10 +25,9 @@ myMobile.impMob()
 
 
 let myMobile2 = new Mobile ("S21", "Galaxy", "Samsung", "Rojo", 384)
-let myMobile3 = new Mobile ("S21", "Galaxy", "Samsung", "Rojo", 384)
+let myMobile3 = new Mobile ("A54", "Galaxy", "Samsung", "Negro", 415)
 let myMobiles = [myMobile, myMobile2, myMobile3]
 
-for (const mobile of myMobiles) {
-    console.log(`\nMobile ${myMobiles.indexOf(mobile) + 1}:`);
-    mobile.impMob();
-  }
+myMobiles[0].impMob()
+myMobiles[1].impMob()
+myMobiles[2].impMob()
