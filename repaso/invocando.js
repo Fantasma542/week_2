@@ -7,9 +7,9 @@ var arrays = [
     ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"],
     ["Venezuela", "Veneno", "Voltaje"]
 ];
-for (var i = 0; i < arrays.length; i++) {
-    var array = arrays[i];
-    var suma = (0, buclesFor_1.add)(array);
-    (0, condicionales_1.isEven)(suma);
-    console.log("Su suma es: ".concat(suma));
-}
+var arr1 = (0, buclesFor_1.add)(arrays[0]);
+var arr2 = (0, buclesFor_1.add)(arrays[1]);
+var arr3 = (0, buclesFor_1.add)(arrays[2]);
+var parImp1 = (0, condicionales_1.isEven)(arr1);
+var parImp2 = (0, condicionales_1.isEven)(arr2);
+var parImp3 = (0, condicionales_1.isEven)(arr3);
