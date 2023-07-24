@@ -1,6 +1,6 @@
 let myLib = require("./person")
 
-let pepe = new myLib.Person("Pepe", "Gonzalez", 1993, 65, 1.75, ['Correr', 'Dormir', 'Nadar'])
+let pepe = new myLib.Person("Pepes", "Gonzalez", 1993, 65, 1.75, ['Correr', 'Dormir', 'Nadar'])
 console.log(pepe);
 
 pepe.printAll()
