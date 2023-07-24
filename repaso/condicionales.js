@@ -39,30 +39,18 @@ function zodiac(day, month) {
         return 'Eres Piscis';
     }
 }
-var aries = zodiac(22, 3);
-console.log(aries);
-var tauro = zodiac(22, 4);
-console.log(tauro);
-var geminis = zodiac(5, 6);
-console.log(geminis);
-var cancer = zodiac(22, 6);
-console.log(cancer);
-var leo = zodiac(5, 8);
-console.log(leo);
-var virgo = zodiac(5, 9);
-console.log(virgo);
-var libra = zodiac(9, 10);
-console.log(libra);
-var escorpio = zodiac(30, 10);
-console.log(escorpio);
-var sagitario = zodiac(19, 12);
-console.log(sagitario);
-var capricornio = zodiac(5, 1);
-console.log(capricornio);
-var acuario = zodiac(15, 2);
-console.log(acuario);
-var piscis = zodiac(25, 2);
-console.log(piscis);
+console.log(zodiac(12, 4));
+console.log(zodiac(22, 4));
+console.log(zodiac(5, 6));
+console.log(zodiac(22, 6));
+console.log(zodiac(5, 8));
+console.log(zodiac(5, 9));
+console.log(zodiac(9, 10));
+console.log(zodiac(30, 10));
+console.log(zodiac(19, 12));
+console.log(zodiac(5, 1));
+console.log(zodiac(15, 2));
+console.log(zodiac(25, 2));
 function continent(country) {
     if (country === 'España' || country === 'Francia' || country === 'Rumania' || country === 'Italia' || country === 'Belgica') {
         console.log('Eres de Europa');

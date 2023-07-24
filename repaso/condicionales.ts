@@ -27,31 +27,18 @@ if (day >= 21 && month === 3 || day <= 19 && month ===4){
     return 'Eres Piscis'
 }
 }
-let aries = zodiac(22, 3)
-console.log(aries);
-
-let tauro = zodiac(22, 4)
-console.log(tauro);
-let geminis = zodiac(5, 6)
-console.log(geminis);
-let cancer = zodiac(22, 6)
-console.log(cancer);
-let leo = zodiac(5, 8)
-console.log(leo);
-let virgo = zodiac(5, 9)
-console.log(virgo);
-let libra = zodiac(9, 10)
-console.log(libra);
-let escorpio = zodiac(30, 10)
-console.log(escorpio);
-let sagitario = zodiac(19, 12)
-console.log(sagitario);
-let capricornio = zodiac(5, 1)
-console.log(capricornio);
-let acuario = zodiac(15, 2)
-console.log(acuario);
-let piscis = zodiac(25, 2)
-console.log(piscis);
+console.log(zodiac(12, 4));
+console.log(zodiac(22, 4));
+console.log(zodiac(5, 6));
+console.log(zodiac(22, 6));
+console.log(zodiac(5, 8));
+console.log(zodiac(5, 9));
+console.log(zodiac(9, 10));
+console.log(zodiac(30, 10));
+console.log(zodiac(19, 12));
+console.log(zodiac(5, 1));
+console.log(zodiac(15, 2));
+console.log(zodiac(25, 2));
 
 
 
