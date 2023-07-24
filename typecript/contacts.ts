@@ -9,7 +9,7 @@ export class Contacts{
       for (let i = 0; i < this.people.length; i++) {
         let objeto = this.people[i];
         console.log(`
-Nombre: ${objeto.name}
+Nombres: ${objeto.name}
 Edad: ${objeto.age}
 Dirección: ${objeto.getAddress()}`);
       }

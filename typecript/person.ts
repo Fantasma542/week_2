@@ -24,7 +24,7 @@ public getAddress():string{
 }
 
 
-////log
+////log  2222
 // let pepe = new Person('Juan', 20, 'Primo de Rivera')
 // console.log(pepe.printName());
 

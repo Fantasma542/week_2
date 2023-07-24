@@ -7,7 +7,7 @@ var libro2 = new book_1.Book("La casa de Bernarda Alba", 152, "9326326-BC54500",
 var libro3 = new book_1.Book("Romancero Gitano", 250, "5241234-BC75463", "Federico García Lorca", "Juan Régulo Pérez");
 var libro4 = new book_1.Book("Don Quijote de La Mancha", 462, "8352852-BC41525", "Miguel de Cervantes", "Agustín Jubera");
 var books = [libro1, libro2, libro3];
-var libros = new library_1.Library(books, "Gran Vía", "Juan");
+var libros = new library_1.Library(books, "Gran Vías", "Juan");
 console.log(libros.toString());
 console.log(libros.getNumberOfBooks());
 console.log(libros.findByAuthor("Federico García Lorca"));

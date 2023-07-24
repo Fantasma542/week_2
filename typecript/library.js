@@ -29,7 +29,7 @@ var Library = /** @class */ (function () {
     Library.prototype.toString = function () {
         var libros = '';
         for (var i = 0; i < this.books.length; i++) {
-            var book = " Book ".concat(i + 1, ":\n").concat(this.books[i].toString());
+            var book = " Books ".concat(i + 1, ":\n").concat(this.books[i].toString());
             libros += book;
         }
         return libros;

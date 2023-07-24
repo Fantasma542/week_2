@@ -1,46 +1,32 @@
-class Person{
-    constructor(name, surname, yearOfBirth, weight, height, hobbies){
-        this.nombre = name
-        this.apellidos = surname
-        this.anyoNacimiento = yearOfBirth
-        this.edad = this.calcEdad(2023)
-        this.peso = weight
-        this.altura = height
-        this.imc = this.calcImc()
-        this.aficiones = hobbies
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Person = void 0;
+var Person = /** @class */ (function () {
+    function Person(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
     }
-    ///////metodo
-    calcImc(){
-    return this.peso / (this.altura * this.altura)
-    }
-    calcEdad(age){
-        return age - this.anyoNacimiento
-    }
-    printAll(){
-        console.log(`Nombre - ${this.nombre}`);
-        console.log(`Apellidos - ${this.apellidos}`);
-        console.log(`Año de Nacimiento - ${this.anyoNacimiento}`);
-        console.log(`Edad - ${this.edad}`);
-        console.log(`Peso - ${this.peso}`);
-        console.log(`Altura - ${this.altura}`);
-        console.log(`Su Imc es - ${this.imc}`);
-    }
-    printHobbies(){
-        return this.aficiones
-    }
-}
-
-let pepe = new Person("Pepe", "Gonzalez", 1993, 65, 1.75, ['Correr', 'Dormir', 'Nadar'])
+    /////metodos
+    Person.prototype.printName = function () {
+        return this.name;
+    };
+    Person.prototype.yearOfBirth = function (currentYear) {
+        return currentYear - this.age;
+    };
+    Person.prototype.setAddress = function (adress) {
+        this.address = adress;
+    };
+    Person.prototype.getAddress = function () {
+        return this.address;
+    };
+    return Person;
+}());
+exports.Person = Person;
+////log  2222
+// let pepe = new Person('Juan', 20, 'Primo de Rivera')
+// console.log(pepe.printName());
+// console.log(pepe.yearOfBirth(2023));
+// pepe.setAddress('Los Angeles')
 // console.log(pepe);
-
-// pepe.printAll()
-
-// console.log(pepe.printHobbies());
-
-module.exports = {Person}
-
-
-
-//////Con console
-// console.log(pepe.calcImc());
-// console.log(pepe.calcEdad(2023));
+// console.log(pepe.getAddress());

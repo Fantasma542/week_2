@@ -32,7 +32,7 @@ export class Library{
     public toString(): string {
         let libros = '';
         for (let i = 0; i < this.books.length; i++) {
-          let book = ` Book ${i + 1}:
+          let book = ` Books ${i + 1}:
 ${this.books[i].toString()}`;
           libros += book;
         }

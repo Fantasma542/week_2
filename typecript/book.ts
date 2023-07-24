@@ -50,7 +50,7 @@ export class Book{
     }
     public toString():string{
 
-return `Title - ${this.title},
+return `Titles - ${this.title},
 Number of Pages - ${this.nPages}
 ISBN - ${this.isbn}
 Author - ${this.author}
