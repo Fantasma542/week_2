@@ -24,4 +24,4 @@ var pointArray = [
     new point_1.Point(5, 9),
 ];
 var nearestPoint = newPoint.calculateNearest(pointArray);
-console.log("El punto más cercano es:", nearestPoint);
+console.log("El punto cercano es:", nearestPoint);

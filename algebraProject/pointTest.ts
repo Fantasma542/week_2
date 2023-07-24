@@ -31,6 +31,6 @@ let pointArray = [
     new Point(5, 9),]
 
     let nearestPoint = newPoint.calculateNearest(pointArray);
-    console.log("El punto más cercano es:", nearestPoint);
+    console.log("El punto cercano es:", nearestPoint);
 
 
