@@ -22,7 +22,7 @@ function isRainbow(colors) {
             console.log("Este color esta en el arcoiris y es el ".concat(colores));
         }
         else {
-            console.log("Este color no esta en el arcoiris y es el ".concat(colores));
+            console.log("Este color no est\u00E1 en el arcoiris y es el ".concat(colores));
         }
     }
 }

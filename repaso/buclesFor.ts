@@ -23,7 +23,7 @@ function isRainbow(colors: string[]):void{
         if (colores.includes('Rojo' ) || colores.includes('Amarillo') || colores.includes('Naranja') || colores.includes('Verde') || colores.includes('Azul') || colores.includes('Azul oscuro') || colores.includes('Morado') || colores.includes('Rosa')) {
             console.log(`Este color esta en el arcoiris y es el ${colores}`);
         } else {
-            console.log(`Este color no esta en el arcoiris y es el ${colores}`);
+            console.log(`Este color no está en el arcoiris y es el ${colores}`);
             
         }
         
