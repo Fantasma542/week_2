@@ -2,42 +2,44 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isEven = void 0;
 function zodiac(day, month) {
+    var signo;
     if (day >= 21 && month === 3 || day <= 19 && month === 4) {
-        return 'Eres Aries';
+        signo = 'Eres Aries';
     }
     else if (day >= 20 && month === 4 || day <= 20 && month === 5) {
-        return 'Eres Tauro';
+        signo = 'Eres Tauro';
     }
     else if (day >= 21 && month === 5 || day <= 20 && month === 6) {
-        return 'Eres Geminis';
+        signo = 'Eres Geminis';
     }
     else if (day >= 21 && month === 6 || day <= 22 && month === 7) {
-        return 'Eres Cancer';
+        signo = 'Eres Cancer';
     }
     else if (day >= 23 && month === 7 || day <= 22 && month === 8) {
-        return 'Eres Leo';
+        signo = 'Eres Leo';
     }
     else if (day >= 23 && month === 8 || day <= 22 && month === 9) {
-        return 'Eres Virgo';
+        signo = 'Eres Virgo';
     }
     else if (day >= 23 && month === 9 || day <= 22 && month === 10) {
-        return 'Eres Libra';
+        signo = 'Eres Libra';
     }
     else if (day >= 23 && month === 10 || day <= 21 && month === 11) {
-        return 'Eres Escorpio';
+        signo = 'Eres Escorpio';
     }
     else if (day >= 22 && month === 11 || day <= 21 && month === 12) {
-        return 'Eres Sagitario';
+        signo = 'Eres Sagitario';
     }
     else if (day >= 22 && month === 12 || day <= 19 && month === 1) {
-        return 'Eres Capricornio';
+        signo = 'Eres Capricornio';
     }
     else if (day >= 20 && month === 1 || day <= 18 && month === 2) {
-        return 'Eres Acuario';
+        signo = 'Eres Acuario';
     }
     else if (day >= 19 && month === 2 || day <= 20 && month === 3) {
-        return 'Eres Piscis';
+        signo = 'Eres Piscis';
     }
+    return signo;
 }
 console.log(zodiac(12, 4));
 console.log(zodiac(22, 4));
