@@ -8,12 +8,12 @@ var Triangle = /** @class */ (function () {
         this.vertex3 = vertex3;
     }
     Triangle.prototype.calculateLengthSides = function () {
-        var sidesLength = [];
-        var side1 = this.vertex1.calculateDistance(this.vertex2);
-        var side2 = this.vertex2.calculateDistance(this.vertex3);
-        var side3 = this.vertex3.calculateDistance(this.vertex1);
-        sidesLength.push(side1, side2, side3);
-        return sidesLength;
+        var long = [];
+        var longitud1 = this.vertex1.calculateDistance(this.vertex2);
+        var longitud2 = this.vertex2.calculateDistance(this.vertex3);
+        var longitud3 = this.vertex3.calculateDistance(this.vertex1);
+        long.push(longitud1, longitud2, longitud3);
+        return long;
     };
     return Triangle;
 }());

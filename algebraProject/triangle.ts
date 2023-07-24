@@ -11,13 +11,13 @@ export class Triangle{
         this.vertex3 = vertex3
     }
     public calculateLengthSides():number[]{
-        const sidesLength: number[] = [];
+        let long: number[] = [];
 
-    const side1 = this.vertex1.calculateDistance(this.vertex2);
-    const side2 = this.vertex2.calculateDistance(this.vertex3);
-    const side3 = this.vertex3.calculateDistance(this.vertex1);
+    let longitud1 = this.vertex1.calculateDistance(this.vertex2);
+    let longitud2 = this.vertex2.calculateDistance(this.vertex3);
+    let longitud3 = this.vertex3.calculateDistance(this.vertex1);
 
-    sidesLength.push(side1, side2, side3);
-    return sidesLength;
+    long.push(longitud1, longitud2, longitud3);
+    return long;
     }
 }
