@@ -7,7 +7,7 @@ class Contacts{
         for (let i = 0; i < this.persona.length; i++) {
             let objeto = this.persona[i];
             console.log(`
-Nombre: ${objeto.nombre},
+Nombres: ${objeto.nombre},
 Apellidos: ${objeto.apellidos},
 Año de Nacimiento: ${objeto.anyoNacimiento},
 Peso: ${objeto.peso},

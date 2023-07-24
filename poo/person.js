@@ -23,7 +23,7 @@ class Person{
         console.log(`Edad - ${this.edad}`);
         console.log(`Peso - ${this.peso}`);
         console.log(`Altura - ${this.altura}`);
-        console.log(`Su Imc es - ${this.imc}`);
+        console.log(`Su IMC es - ${this.imc}`);
     }
     printHobbies(){
         return this.aficiones
