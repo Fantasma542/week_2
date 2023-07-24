@@ -54,27 +54,29 @@ console.log(zodiac(5, 1));
 console.log(zodiac(15, 2));
 console.log(zodiac(25, 2));
 function continent(country) {
+    var continente;
     if (country === 'España' || country === 'Francia' || country === 'Rumania' || country === 'Italia' || country === 'Belgica') {
-        console.log('Eres de Europa');
+        continente = 'Eres de Europa';
     }
     else if (country === 'Pakistan' || country === 'China' || country === 'Japon' || country === 'Korea del Sur' || country === 'India') {
-        console.log('Eres de Asia');
+        continente = 'Eres de Asia';
     }
     else if (country === 'Egipto' || country === "Marruecos" || country === 'Nigeria' || country === 'Kenia' || country === 'Republica del Congo') {
-        console.log('Eres de Africa');
+        continente = 'Eres de Africa';
     }
     else if (country === 'Estados Unidos' || country === 'Argentina' || country === 'Mexico' || country === 'Chile' || country === 'Brasil') {
-        console.log('Eres de America');
+        continente = 'Eres de America';
     }
-    else if (country === 'Nueva Zelanda' || country === 'Papua Nueva Guinea' || country === 'Ausralia') {
-        console.log('Eres de Oceanía');
+    else if (country === 'Nueva Zelanda' || country === 'Papua Nueva Guinea' || country === 'Australia') {
+        continente = 'Eres de Oceanía';
     }
+    return continente;
 }
-continent('España');
-continent('China');
-continent('Marruecos');
-continent('Estados Unidos');
-continent('Nueva Zelanda');
+console.log(continent('España'));
+console.log(continent('China'));
+console.log(continent('Marruecos'));
+console.log(continent('Estados Unidos'));
+console.log(continent('Australia'));
 function isEven(number) {
     if (number % 2 == 0) {
         console.log('El numero es par');
