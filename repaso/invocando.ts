@@ -7,9 +7,9 @@ let arrays = [
     ["Venezuela", "Veneno", "Voltaje"]
   ];
 
-for (let i = 0; i < arrays.length; i++) {
-    let array = arrays[i];
-    let suma = add(array);
-    isEven(suma);
-  console.log(`Su suma es: ${suma}`);
-}
+  let arr1 = add(arrays[0]);
+  let arr2 = add(arrays[1]);
+  let arr3= add(arrays[2]);
+  let parImp1 = isEven(arr1)
+  let parImp2 = isEven(arr2)
+  let parImp3 = isEven(arr3)
