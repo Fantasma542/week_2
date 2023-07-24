@@ -21,5 +21,5 @@ function startWhithM(myNames:string[]) {
     }
     return true
 }
-let names = startWhithM(['Maria', 'Mol', 'Manuel'])
+let names = startWhithM(['Maria', 'Marta', 'Manuel'])
 console.log(names)
