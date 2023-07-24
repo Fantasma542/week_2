@@ -33,12 +33,12 @@ export class MobileCollection{
         let mobile = this.mobiles
         for (let i = 0; i < mobile.length; i++) {
             console.log(`
-            The characteristics of the mobile ${mobile[i].getName} are:
-            • Name: ${mobile[i].getName()}
-            • Trademark: ${mobile[i].getTrademark()}
-            • Model: ${mobile[i].getModel()}
-            • Color: ${mobile[i].getColor()}
-            • Price: ${mobile[i].getPrice()}
+            The characteristics of the mobile ${mobile[i].getName()} are:
+            - Name: ${mobile[i].getName()}
+            - Trademark: ${mobile[i].getTrademark()}
+            - Model: ${mobile[i].getModel()}
+            - Color: ${mobile[i].getColor()}
+            - Price: ${mobile[i].getPrice()}
             `);
             
         }

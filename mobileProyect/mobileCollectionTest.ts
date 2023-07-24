@@ -1,7 +1,7 @@
 import { Mobile } from "./mobile";
 import { MobileCollection } from "./mobileCollection";
 
-let mobile1 = new Mobile("Hol", "Yo", "Soy", "Rojo", 5)
+let mobile1 = new Mobile("SA", "SS", "Soy", "Rojo", 5)
 let mobile2 = new Mobile("Desfe", "No", "Si", "Azul", 50)
 let mobile3 = new Mobile("Donde", "El", "Po", "Marro", 30)
 let mobile4 = new Mobile("Pues", "Al", "Nre", "Negro", 20)

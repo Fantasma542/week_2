@@ -32,7 +32,7 @@ var MobileCollection = /** @class */ (function () {
     MobileCollection.prototype.printCollection = function () {
         var mobile = this.mobiles;
         for (var i = 0; i < mobile.length; i++) {
-            console.log("\n            The characteristics of the mobile ".concat(mobile[i].getName, " are:\n            \u2022 Name: ").concat(mobile[i].getName(), "\n            \u2022 Trademark: ").concat(mobile[i].getTrademark(), "\n            \u2022 Model: ").concat(mobile[i].getModel(), "\n            \u2022 Color: ").concat(mobile[i].getColor(), "\n            \u2022 Price: ").concat(mobile[i].getPrice(), "\n            "));
+            console.log("\n            The characteristics of the mobile ".concat(mobile[i].getName(), " are:\n            - Name: ").concat(mobile[i].getName(), "\n            - Trademark: ").concat(mobile[i].getTrademark(), "\n            - Model: ").concat(mobile[i].getModel(), "\n            - Color: ").concat(mobile[i].getColor(), "\n            - Price: ").concat(mobile[i].getPrice(), "\n            "));
         }
         console.log("Price overall: ".concat(this.totalPrice));
     };
