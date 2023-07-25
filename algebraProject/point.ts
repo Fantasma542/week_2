@@ -33,7 +33,7 @@ export class Point{
     return distance;
     }
     public calculateQuadrant():number{
-      let numero:number;
+      let numero;
         if (this.getNumX() === 0 ||this.getNumY() === 0) {
             numero = 0;
         } else if (this.getNumX() > 0 && this.getNumY() > 0) {
