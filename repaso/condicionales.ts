@@ -1,5 +1,5 @@
 function zodiac(day:number, month:number){
-    let signo:string;
+    let signo;
 if (day >= 21 && month === 3 || day <= 19 && month ===4){
     signo = 'Eres Aries'
 
@@ -45,7 +45,7 @@ console.log(zodiac(25, 2));
 
 
 function continent(country:string){
-    let continente:string;
+    let continente;
     if (country === 'España' || country === 'Francia' || country === 'Rumania' || country === 'Italia' || country === 'Belgica') {
         continente = 'Eres de Europa'
     }
