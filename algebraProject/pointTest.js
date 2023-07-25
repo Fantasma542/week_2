@@ -9,7 +9,7 @@ console.log(pepe.getNumY());
 console.log(pepe.calculateQuadrant());
 pepe.setNumX(6);
 console.log(pepe);
-pepe.setNumY(8);
+pepe.setNumY(-1);
 console.log(pepe);
 pepe.toString();
 console.log(pepe.distanceToOrigin());

@@ -20,33 +20,35 @@ var Point = /** @class */ (function () {
         this.y = NewNumY;
     };
     Point.prototype.toString = function () {
-        console.log("\"(".concat(this.x, ", ").concat(this.y, ")\""));
+        console.log("\"(".concat(this.getNumX(), ", ").concat(this.getNumY(), ")\""));
     };
     Point.prototype.distanceToOrigin = function () {
-        return Math.sqrt(this.x * this.x + this.y * this.y);
+        return Math.sqrt(this.getNumX() * this.getNumX() + this.getNumY() * this.getNumY());
     };
     Point.prototype.calculateDistance = function (anotherPoint) {
-        var deltaX = anotherPoint.x - this.x;
-        var deltaY = anotherPoint.y - this.y;
+        var deltaX = anotherPoint.x - this.getNumX();
+        var deltaY = anotherPoint.y - this.getNumY();
         var distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
         return distance;
     };
     Point.prototype.calculateQuadrant = function () {
-        if (this.x === 0 || this.y === 0) {
-            return 0;
+        var numero;
+        if (this.getNumX() === 0 || this.getNumY() === 0) {
+            numero = 0;
         }
-        else if (this.x > 0 && this.y > 0) {
-            return 1;
+        else if (this.getNumX() > 0 && this.getNumY() > 0) {
+            numero = 1;
         }
-        else if (this.x < 0 && this.y > 0) {
-            return 2;
+        else if (this.getNumX() < 0 && this.getNumY() > 0) {
+            numero = 2;
         }
-        else if (this.x < 0 && this.y < 0) {
-            return 3;
+        else if (this.getNumX() < 0 && this.getNumY() < 0) {
+            numero = 3;
         }
-        else {
-            return 4;
+        else if (this.getNumX() > 0 && this.getNumY() < 0) {
+            numero = 4;
         }
+        return numero;
     };
     Point.prototype.calculateNearest = function (points) {
         var nearestPoint = points[0];

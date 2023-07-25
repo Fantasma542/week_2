@@ -12,7 +12,7 @@ console.log(pepe.calculateQuadrant());
 
 pepe.setNumX(6)
 console.log(pepe);
-pepe.setNumY(8)
+pepe.setNumY(-1)
 console.log(pepe);
 
 
