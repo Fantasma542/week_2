@@ -20,30 +20,32 @@ export class Point{
     }
 
     public toString(){
-        console.log(`"(${this.x}, ${this.y})"`);
+        console.log(`"(${this.getNumX()}, ${this.getNumY()})"`);
         
     }
     public distanceToOrigin():number{
-        return Math.sqrt(this.x * this.x + this.y * this.y)
+        return Math.sqrt(this.getNumX() * this.getNumX() + this.getNumY() * this.getNumY())
     }
     public calculateDistance(anotherPoint:Point):number{
-        const deltaX = anotherPoint.x - this.x;
-    const deltaY = anotherPoint.y - this.y;
+        const deltaX = anotherPoint.x - this.getNumX();
+    const deltaY = anotherPoint.y - this.getNumY();
     const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
     return distance;
     }
     public calculateQuadrant():number{
-        if (this.x === 0 ||this.y === 0) {
-            return 0;
-        } else if (this.x > 0 && this.y > 0) {
-            return 1;
-          } else if (this.x < 0 && this.y > 0) {
-            return 2;
-          } else if (this.x < 0 && this.y < 0) {
-            return 3;
-          } else {
-            return 4;
+      let numero:number;
+        if (this.getNumX() === 0 ||this.getNumY() === 0) {
+            numero = 0;
+        } else if (this.getNumX() > 0 && this.getNumY() > 0) {
+            numero = 1;
+          } else if (this.getNumX() < 0 && this.getNumY() > 0) {
+            numero = 2;
+          } else if (this.getNumX() < 0 && this.getNumY() < 0) {
+            numero = 3;
+          } else  if (this.getNumX() > 0 && this.getNumY() < 0){
+            numero = 4;
           }
+      return numero;
     }
     public calculateNearest(points: Point[]):Point{
       
